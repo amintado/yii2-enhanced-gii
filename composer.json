@@ -36,6 +36,6 @@
         }
     },
     "extra": {
-        "bootstrap": "mootensai\\enhancedgii\\Bootstrap"
+        "bootstrap": "amintado\\enhancedgii\\Bootstrap"
     }
 }

@@ -4,7 +4,7 @@ use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
 
 /* @var $this yii\web\View */
-/* @var $generator \mootensai\enhancedgii\crud\Generator */
+/* @var $generator \amintado\enhancedgii\crud\Generator */
 /* @var $relations array */
 $tableSchema = $generator->getTableSchema();
 $fk = $generator->generateFK($tableSchema);
@@ -24,7 +24,7 @@ $modelClass = StringHelper::basename($generator->modelClass);
 foreach ($relations as $name => $rel) {
     $relID = Inflector::camel2id($rel[$generator::REL_CLASS]);
     if ($rel[$generator::REL_IS_MULTIPLE] && isset($rel[$generator::REL_TABLE]) && !in_array($name, $generator->skippedRelations)) {
-        echo "\\mootensai\\components\\JsBlock::widget(['viewFile' => '_script', 'pos'=> \\yii\\web\\View::POS_END, \n"
+        echo "\\amintado\\components\\JsBlock::widget(['viewFile' => '_script', 'pos'=> \\yii\\web\\View::POS_END, \n"
                 . "    'viewParams' => [\n"
                 . "        'class' => '{$rel[$generator::REL_CLASS]}', \n"
                 . "        'relID' => '$relID', \n"

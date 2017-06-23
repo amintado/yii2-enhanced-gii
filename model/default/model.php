@@ -4,7 +4,7 @@
  */
 
 /* @var $this yii\web\View */
-/* @var $generator mootensai\enhancedgii\crud\Generator */
+/* @var $generator amintado\enhancedgii\crud\Generator */
 /* @var $tableName string full table name */
 /* @var $className string class name */
 /* @var $queryClassName string query class name */
@@ -26,7 +26,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\behaviors\BlameableBehavior;
 <?php endif; ?>
 <?php if ($generator->UUIDColumn): ?>
-use mootensai\behaviors\UUIDBehavior;
+use amintado\behaviors\UUIDBehavior;
 <?php endif; ?>
 
 /**
@@ -46,7 +46,7 @@ use mootensai\behaviors\UUIDBehavior;
  */
 class <?= $className ?> extends <?= ($isTree) ? '\kartik\tree\models\Tree' . "\n" : '\\' . ltrim($generator->baseModelClass, '\\') . "\n" ?>
 {
-<?= (!$isTree) ? "    use \\mootensai\\relation\\RelationTrait;\n" : "" ?>
+<?= (!$isTree) ? "    use \\amintado\\relation\\RelationTrait;\n" : "" ?>
 
     /**
      * @inheritdoc

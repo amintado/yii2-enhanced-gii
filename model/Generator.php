@@ -6,7 +6,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace mootensai\enhancedgii\model;
+namespace amintado\enhancedgii\model;
 
 use Yii;
 use yii\base\NotSupportedException;
@@ -29,7 +29,7 @@ use yii\helpers\Inflector;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class Generator extends \mootensai\enhancedgii\BaseGenerator {
+class Generator extends \amintado\enhancedgii\BaseGenerator {
 
     /* @var $tableSchema TableSchema */
 
@@ -460,7 +460,7 @@ class Generator extends \mootensai\enhancedgii\BaseGenerator {
             }
             if (!empty($this->optimisticLock)) {
                 $rules[] = "[['" . $this->optimisticLock . "'], 'default', 'value' => '0']";
-                $rules[] = "[['" . $this->optimisticLock . "'], 'mootensai\\components\\OptimisticLockValidator']";
+                $rules[] = "[['" . $this->optimisticLock . "'], 'amintado\\components\\OptimisticLockValidator']";
             }
         } catch (NotSupportedException $e) {
             // doesn't support unique indexes information...do nothing

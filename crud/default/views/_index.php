@@ -1,5 +1,5 @@
 <?php
-/* @var $generator \mootensai\enhancedgii\crud\Generator */
+/* @var $generator \amintado\enhancedgii\crud\Generator */
 $tableSchema = $generator->getTableSchema();
 $fk = $generator->generateFK($tableSchema);
 $urlParams = $generator->generateUrlParams();
