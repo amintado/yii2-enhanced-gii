@@ -1,6 +1,6 @@
 {
-    "name": "mootensai/yii2-enhanced-gii",
-    "description": "Generate Relational (hasMany, hasOne, belongsTo, & nested) Models & CRUD.",
+    "name": "amintado/yii2-enhanced-gii",
+    "description": "Generate Relational (hasMany, hasOne, belongsTo, & nested) Models & CRUD & chart views.",
     "keywords": ["relation", "gii", "yii2", "yii", "enhanced"],
     "license": "BSD-3-Clause",
     "type": "yii2-extension",
@@ -12,6 +12,10 @@
         {
             "name": "Jiwantoro Ndaru",
             "email": "jiwanndaru@gmail.com"
+        },
+        {
+            "name": "amintado",
+            "email": "info@shahrmap.ir"
         }
     ],
     "require": {
@@ -28,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mootensai\\enhancedgii\\": ""
+            "amintado\\enhancedgii\\": ""
         }
     },
     "extra": {
